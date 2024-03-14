@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+.add_menu{
+  margin-left: 225px;
+  margin-top: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add_menu h3{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   color: #ae50c6;
+   height: max-content;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.adding_menu{
+  height: 450px;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+   border-top: none;
+   margin-top: 60px;
+   margin-left: 170px;
+   text-align: center;
+   box-shadow: 0px 2px 2px 0.4px rgb(202, 201, 201);
+   border-radius: 3px;
+ 
+  
 }
-
-.App-link {
-  color: #61dafb;
+.category_add{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.category_add div{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 80px;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  
+}
+.category_add label{
+  text-align: left;
+  color: #a225c1;
+}
+.category_add select{
+     height: 30px;
+     border-radius: 5px;
+     box-shadow: 0px 1px 3px 0px gray;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 500;
+     font-size: 12px;
+     color: gray;
+}
+.category_add input{
+    height: 30px;
+    border-radius: 5px;
+    color: gray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 500;
+     font-size: 12px;
+     border: 1px solid gray;
+    box-shadow: 0px 1px 3px 0px gray;
+    
+}
+.category_add button{
+    width: 50%;
+    margin-left: 50px;
+    padding: 8px 10px;
+    border: none;
+    background-color:#ae50c6;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 775px) {
+     .adding_menu{
+      margin-left: 50px;
+      width: 60%;
+     }
+}
+@media only screen and (max-width: 634px) {
+  .adding_menu{
+   margin-left: -100px;
+   width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 500px) {
+  .heading{
+    margin-left: -150px;
   }
+  .adding_menu{
+   margin-left: -160px;
+   width: 150%;
+  }
+  .category_add{
+    margin-left: -30px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  
+  .category_add button{
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  
+  .category_add button{
+    margin-left: 30px;
+  }
+  .adding_menu{
+    margin-left: -100px;
+    width: 250%;
+    margin-left: -180px;
+   }
+}
+input:focus{
+  border: none !important;
+  outline: none !important;
 }

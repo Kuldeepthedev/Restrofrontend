@@ -1,0 +1,177 @@
+a{
+    color: #ae50c6;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .logo h2{
+     color: #ae50c6;
+     cursor: pointer;
+  }
+  .burger{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    position: absolute;
+    height: 20px;
+    top: 24px;
+    left: 30px;
+    display: none;
+    cursor: pointer;
+  }
+  .burger >div{
+    height: 3px;
+    width: 25px;
+    background-color: #ae50c6;
+  }
+  .active_burger{
+    position: absolute;
+    height: 20px;
+    top: 34px;
+    left: 230px;
+    z-index: 9999999;
+    display: none;
+    cursor: pointer;
+  }
+  .active_burger >div{
+    z-index: 999999;
+    height: 3px;
+    width: 18px;
+    background-color: #ae50c6;
+  }
+  .active_burger div:nth-child(1){
+      transform: rotate(60deg);
+  }
+  .active_burger div:nth-child(2){
+    display: none;
+}
+  .active_burger div:nth-child(3){
+    transform: rotate(-60deg);
+    margin-left: -18px;
+}
+
+  nav{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    height: 55px;
+  }
+  .left_nav{
+     width: 17%;
+     display: flex;
+     flex-direction: column;
+     padding-left: 10px;
+     
+     
+  }
+  .left_nav_active{
+    display: none;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: white;
+    z-index: 999999;
+    transition: 1s all;
+  }
+  @media only screen and (max-width:681px){
+        .search_bar span{
+          margin-left: 50px;
+        }
+  }
+  @media only screen and (max-width:635px){
+    .left_nav{
+      display: none;
+    }
+    .left_nav_active{
+      display: block;
+      z-index: 99999;
+      width: 100%;
+    }
+    .burger{
+      display: block;
+      display: flex;
+    }
+    .active_burger{
+      display: flex;
+    }
+    .search_bar{
+      margin-left: 10px;
+    }
+}
+  .left_nav ul{
+       padding-left: 15px;
+       list-style-type: none;
+       padding-top: 40px;
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       font-size: 13px;
+       background-color: white;
+       z-index: 999;
+  }
+  .left_nav ul span{
+    display: flex;
+    gap: 10px;
+    background-color: white;
+       z-index: 999;
+  }
+  .left_nav_active ul{
+    width: 150%;
+    padding-left: 15px;
+    list-style-type: none;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 13px;
+    background-color: white;
+       z-index: 999;
+       height: 400px;
+}
+.left_nav_active ul span{
+ display: flex;
+ gap: 10px;
+ background-color: white;
+       z-index: 999;
+}
+  .search_bar{
+     width: 40%;
+     height: max-content;
+     margin-left: 50px;
+  }
+  .search_bar input{
+    border: none;
+    height: 25px;
+    width: 100%;
+  
+  }
+  .react-icon{
+    cursor: pointer;
+  }
+  .search_bar span{
+    width: 100%;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     border: 1px solid gray;
+     padding-left: 10px;
+  }
+  .right_nav{
+    width: 60%;
+    display: flex;
+    gap: 12px;
+    height: max-content;
+    justify-content: flex-end;
+    margin-right: 20px;
+    
+  }
+  .right_nav .notification{
+    float: right;
+    cursor: pointer;
+  }
+  .right_nav .profile{
+    cursor: pointer;
+    float: right;
+  }

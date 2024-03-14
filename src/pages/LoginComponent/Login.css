@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  .login_section{
+    background-color: #520565;
+    height: 650px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .table_image img{
+    height: 150px;
+    width: 200px;
+  }
+  .intro{
+   width: 50%;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    gap: 40px;
+  }
+  .table_image{
+    max-width: 50%;
+  }
+  .restro_name{
+    max-width: 50%;
+  }
+  .intro h1{
+    color: white;
+    font-size: 45px;
+    font-family:cursive;
+    height: 60px;
+  }
+  .intro h3{
+    color: white;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  .login_with_platform img{
+    height: 20px;
+    width: 20px;
+  }
+  .login_with_platform{
+    height: 40%;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .login{
+    background-color: white;
+    height: 500px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 150px;
+    border-radius: 3px;
+  }
+  
+  .login h1{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#8f569d;
+  }
+  .login h5{
+  
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;font-weight: 500;
+  
+  }
+  .google{
+     display: flex;
+     gap: 10px;
+     border: 1px solid gray;
+     align-items: center;
+     justify-content: center;
+     border-radius: 5px;
+     height: 40px;
+     padding: 5px;
+     box-shadow: 0px 1px 2px 0px gray;
+  }
+  .login hr{
+     margin-top: 50px;
+  }
+  .sepretion{
+      font-size: 12px;
+      background-color: white;
+      width: 50px;
+      height: 24px;
+      text-align: center;
+      position: relative;
+      top: -27px;
+      left: 140px;
+  }
+  .fackbook{
+    display: flex;
+    gap: 10px;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    box-shadow: 0px 1px 2px 0px gray;
+  }
+  form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     width: 100%;
+  }
+  
+  .login_with_data{
+    width: 100%;
+  }
+  .login_with_data span{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px gray;
+  }
+  .login_with_data span >svg{
+    size: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  form input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    
+    
+  }
+  form button{
+     padding: 7px 15px;
+     border: none;
+     background-color: #5f1c6f;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-top: 20px;
+  }
+  @media only screen and (max-width:1048px){
+           .intro{
+            flex-direction: column;
+            gap: 10px;
+            margin-left: -50px;
+           }
+           .login_section{
+              justify-content: space-around;
+           }
+           .login{
+            margin-right: 0px;
+           }
+  }
+  @media only screen and (max-width:704px){
+   
+    .login_section{
+       justify-content: flex-start;
+       flex-direction: column;
+       height: 850px;
+       
+    }
+    .intro{
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      margin-right: 60px;
+     }
+     .table_image{
+      font-size: 25px;
+     }
+     .login{
+      width: 250px;
+   
+  
+     }
+     .sepretion{
+      margin-left: -40px;
+     }
+     .login h1{
+       font-size: 30px;
+     }
+    
+  }
